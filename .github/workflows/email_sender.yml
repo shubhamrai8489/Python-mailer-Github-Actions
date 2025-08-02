@@ -21,7 +21,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Send email
-        run: script.py
+        run: python Script.py
         env:
           WORKFLOW_NAME: ${{ github.workflow }}
           REPO_NAME: ${{ github.repository }}
